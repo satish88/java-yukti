@@ -30,6 +30,9 @@ public class MainClass {
         int divide = result3.division(9, 3);
         System.out.println(divide);
 
-
+        //Angle Name
+        Angle result4 = new Angle();
+        String angles = result4.angleName(12.5f);
+        System.out.println(angles);
     }
 }
