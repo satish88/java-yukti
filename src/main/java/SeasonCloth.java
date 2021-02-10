@@ -1,9 +1,9 @@
 public class SeasonCloth {
 
-    public String clothName(String cloth) {
+    public String clothNameTellsSeason(String cloth) {
         String n = ", We wear in ";
         String season;
-        System.out.println("Please write cloth name's first letter in capital.");
+        System.out.println("Please! write cloth name's first letter in capital.");
 
         if (cloth.equals("Sweater")) {
             season = "winter season.";
