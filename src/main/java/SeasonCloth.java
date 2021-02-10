@@ -7,17 +7,17 @@ public class SeasonCloth {
 
         if (cloth.equals("Sweater")) {
             season = "winter season.";
-            return (cloth + n + season);
+            return (cloth + " image " + n + season);
         }
 
         if (cloth.equals("T-shirt")) {
             season = "summer season.";
-            return (cloth + n + season);
+            return (cloth + " image" + n + season);
         }
 
         if (cloth.equals("Rain-coat")) {
             season = "rainy season.";
-            return (cloth + n + season);
+            return (cloth + " image " + n + season);
         } else {
             System.out.println("invalid input ");
             return "not listed cloth.";
