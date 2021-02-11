@@ -34,5 +34,14 @@ public class MainClass {
         Angle result4 = new Angle();
         String angles = result4.angleName(12.5f);
         System.out.println(angles);
+
+        //Prime color
+        ColorType result5 = new ColorType();
+        String prime = result5.primeColor("pink");
+        System.out.println(prime);
+
+        //Secondary color
+        String secondary = result5.secondaryColor("Red", "Blue");
+        System.out.println(secondary);
     }
 }
