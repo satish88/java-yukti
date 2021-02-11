@@ -48,5 +48,10 @@ public class MainClass {
         River result6 = new River();
         String riverLength = result6.riverName("Ganga");
         System.out.println(riverLength);
+
+        //Age Calculator
+        AgeCalculator result7 = new AgeCalculator();
+        int age = result7.ageCounter(1961);
+        System.out.println(age);
     }
 }
