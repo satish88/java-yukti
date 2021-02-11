@@ -51,7 +51,12 @@ public class MainClass {
 
         //Age Calculator
         AgeCalculator result7 = new AgeCalculator();
-        int age = result7.ageCounter(1961);
+        int age = result7.ageCounter(2021, 1998);
         System.out.println(age);
+
+        //country information
+        Country result8 = new Country();
+        String countryInfo = result8.countryNameGiveInformation("China");
+        System.out.println(countryInfo);
     }
 }

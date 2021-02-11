@@ -1,6 +1,9 @@
 public class AgeCalculator {
-    public int ageCounter(int birthYear) {
-        int t = 2021;
-        return t - birthYear;
+    public int ageCounter(int presentYear, int birthYear) {
+        if (presentYear >= birthYear) {
+            return (presentYear - birthYear);
+        } else {
+            return Integer.parseInt("invalid year");
+        }
     }
 }
