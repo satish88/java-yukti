@@ -43,5 +43,10 @@ public class MainClass {
         //Secondary color
         String secondary = result5.secondaryColor("Red", "Blue");
         System.out.println(secondary);
+
+        //river length
+        River result6 = new River();
+        String riverLength = result6.riverName("Ganga");
+        System.out.println(riverLength);
     }
 }
