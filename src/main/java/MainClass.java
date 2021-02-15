@@ -37,6 +37,10 @@ public class MainClass {
 
         //Prime color
         ColorType result5 = new ColorType();
+
+        // prime is a variable of type: String and has a value
+        // returned by primeColor method with input:"pink"
+
         String prime = result5.primeColor("pink");
         System.out.println(prime);
 
@@ -56,7 +60,7 @@ public class MainClass {
 
         //country information
         Country result8 = new Country();
-        String countryInfo = result8.countryNameGiveInformation("China");
+        String countryInfo = result8.countryNameGiveInformation("USA");
         System.out.println(countryInfo);
 
         Dynasty result9 = new Dynasty();
