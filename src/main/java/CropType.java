@@ -5,16 +5,16 @@ public class CropType {
         String month;
         System.out.println("Please! Write crop name in capital.");
 
-        if (crop.equals("Wheat")) {
-            type = ", Rabi/winter crop ,";
+        if (crop.equals("Wheat") || crop.equals("Barley") || crop.equals("Oats") || crop.equals("Chickpea") || crop.equals("Linseed") || crop.equals("Mustard")) {
+            type = "Rabi/winter crop ,";
             month = " November to April.";
-            return crop + type + month;
+            return type + month;
         }
 
-        if (crop.equals("Rice")) {
-            type = ", kharif/monsoon crop ,";
+        if (crop.equals("Rice") || crop.equals("Maize") || crop.equals("Sorghum") || crop.equals("Bajra") || crop.equals("Ragi") || crop.equals("Soyabean") || crop.equals("Groundnut") || crop.equals("Cotton")) {
+            type = "kharif/monsoon crop ,";
             month = " July to October";
-            return crop + type + month;
+            return type + month;
         } else {
             return "Invalid crop name";
         }

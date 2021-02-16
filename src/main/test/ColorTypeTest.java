@@ -20,9 +20,16 @@ public class ColorTypeTest {
 
     @Test
     public void resultOfTwoColor() {
+        ColorType test3 = new ColorType();
+        String colorType3 = test3.secondaryColor("Green", "Blue");
+        assertEquals(colorType3, "No Color Available", "add two prime colors");
+    }
+
+    @Test
+    public void resultOfTwoPrimeColor() {
         ColorType test4 = new ColorType();
-        String colorType4 = test4.secondaryColor("Green", "Blue");
-        assertEquals(colorType4, "No Color Available", "add two prime colors");
+        String colorType4 = test4.secondaryColor("Red", "Yellow");
+        assertEquals(colorType4, "Orange Secondary Color", "Mix two prime color");
     }
 
 

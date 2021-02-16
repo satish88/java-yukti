@@ -4,18 +4,16 @@ import org.testng.annotations.Test;
 public class DynastyTest {
 
     @Test
-    public void test1() {
+    public void yearCommonInMoreThanOneDynasty() {
         Dynasty result = new Dynasty();
-        String dynasty = result.dynastyTimeline(647);
-        System.out.println(dynasty);
-        Assert.assertEquals(dynasty, "Kushana dynasty");
+        String dynasty = result.dynastyTimeline(1947);
+        Assert.assertEquals(dynasty, " British Raj Independent India");
     }
 
     @Test
     public void yearLessThanZeroShouldGiveNoInformationAvailable() {
         Dynasty result = new Dynasty();
         String dynasty = result.dynastyTimeline(-1);
-        System.out.println(dynasty);
         Assert.assertEquals(dynasty, "no Information. Invalid yr");
     }
 

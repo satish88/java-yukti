@@ -63,8 +63,9 @@ public class MainClass {
         String countryInfo = result8.countryNameGiveInformation("USA");
         System.out.println(countryInfo);
 
+        //Dynasty
         Dynasty result9 = new Dynasty();
-        String dynastyName = result9.dynastyTimeline(635);
+        String dynastyName = result9.dynastyTimeline(1947);
         System.out.println(dynastyName);
     }
 }

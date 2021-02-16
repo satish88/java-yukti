@@ -1,6 +1,6 @@
 public class River {
     public String riverName(String river) {
-        float length;
+        int length;
         String km = "Km";
         System.out.println("Please! Write the river name's first letter capital.");
 
@@ -34,6 +34,7 @@ public class River {
             return length + km;
         }
 
+
         if (river.equals("Namrada")) {
             length = 1312;
             return length + km;
@@ -53,7 +54,8 @@ public class River {
             length = 1400;
             return length + km;
         } else {
-            return "not listed river";
+            System.out.println("check the river name");
+            return "unlisted river";
         }
     }
 }
