@@ -18,7 +18,7 @@ public class Country {
         }
 
         if (country.equals("India")) {
-            continent = "In Aisa";
+            continent = "In Asia";
             capital = " New delhi is the capital, ";
             areaAndPlaceInWorld = " area is 3.287 million km² and 7th biggest country, ";
             currency = " Indian Rupee, ";
