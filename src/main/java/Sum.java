@@ -3,8 +3,14 @@ public class Sum {
     //
     public static void sumWithOneInput(int n) {
         int result = 0;
-        for (int number = 1; number <= n; number = number + 1) {
-            result = result + number;
+        if (n > 0) {
+            for (int number = 1; number <= n; number = number + 1) {
+                result = result + number;
+            }
+        } else if (n < 0) {
+            for (int number = -1; number >= n; number = number - 1) {
+                result = result + number;
+            }
         }
         System.out.println(result);
 
@@ -33,8 +39,14 @@ public class Sum {
 
     public static void sumWithTwoInput(int a, int n) {
         int result = 0;
-        for (int number = a; number <= n; number = number + 1) {
-            result = result + number;
+        if (a < n) {
+            for (int number = a; number <= n; number = number + 1) {
+                result = result + number;
+            }
+        } else if (a > n) {
+            for (int number = a; number >= n; number = number - 1) {
+                result = result + number;
+            }
         }
         System.out.println(result);
 
@@ -55,8 +67,8 @@ public class Sum {
     }
 
     public static void main(String[] args) {
-        sumWithOneInput(5);
-        sumWithTwoInput(2, 4);
+        sumWithOneInput(-3);
+        sumWithTwoInput(-3, -3);
     }
 
 }

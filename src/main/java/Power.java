@@ -1,14 +1,20 @@
 public class Power {
-    public static void main1(String[] args) {
-        int p = 123;
-        int power = 5;
-        for (int i = 5; i <= p; i = i * 5) {
-            power = power * i;
-            System.out.println(power);
+
+    public static void calculatePower(int number, int power) {
+        int result = 1;
+        if (power >= 0) {
+            for (int i = 1; i <= power; i++) {
+                result = result * number;
+            }
+            System.out.println(result);
+        } else {
+            System.out.println("Enter positive power");
         }
+
     }
 
     public static void main(String[] args) {
+        calculatePower(5, -3);
         int i = 3;
         int power = 4;
         int result = i;
