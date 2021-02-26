@@ -4,7 +4,7 @@ public class MainClass {
         System.out.println("hello");
 
         Factorial result = new Factorial();
-        int factorial = Factorial.calculateFactorial(4);
+        long factorial = Factorial.calculateFactorial(19L);
         System.out.println(factorial);
 
         Sum calculation = new Sum();

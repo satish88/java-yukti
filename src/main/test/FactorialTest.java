@@ -1,26 +1,26 @@
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 public class FactorialTest {
     @Test
     public static void testForCalculatingPositiveNumberFactorial() {
         Factorial factorial = new Factorial();
-        int result = factorial.calculateFactorial(4);
+        long result = Factorial.calculateFactorial(4);
         assertEquals(result, 24, "value of 4!");
     }
 
     @Test
     public static void testForCalculatingZeroFactorial() {
         Factorial factorial = new Factorial();
-        int result = factorial.calculateFactorial(0);
+        long result = Factorial.calculateFactorial(0);
         assertEquals(result, 1, "value of 0!");
     }
 
     @Test
     public static void testForCalculatingNegativeNumberFactorial() {
         Factorial factorial = new Factorial();
-        int result = factorial.calculateFactorial(-4);
+        long result = Factorial.calculateFactorial(-4);
         assertEquals(result, -4, "value of -4!");
     }
 
