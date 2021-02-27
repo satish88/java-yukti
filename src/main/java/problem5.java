@@ -3,14 +3,22 @@ public class problem5 {
     // Modify the previous program such that only multiples of three
     // or five are considered in the sum, e.g. 3, 5, 6, 9, 10, 12, 15 for n=17
 
-    public static void solutionOfProblemFive(int a, int n) {
+    public static int solutionOfProblemFive(int a, int n) {
         int sum = 0;
-        for (int i = a; i <= n; i++) {
-            if (i % 3 == 0 || i % 5 == 0) {
-                sum = sum + i;
+        if (a < n) {
+            for (int i = a; i <= n; i++) {
+                if (i % 3 == 0 || i % 5 == 0) {
+                    sum = sum + i;
+                }
+            }
+        } else if (a > n) {
+            for (int i = a; i >= n; i = i - 1) {
+                if (i % 3 == 0 || i % 5 == 0) {
+                    sum = sum + i;
+                }
             }
         }
-        System.out.println(sum);
+        return sum;
     }
 
     /* public static void my(int n) {
@@ -34,11 +42,4 @@ public class problem5 {
     // counter = 3
     // 3 <= 3 true
     // result = 6
-
-
-    public static void main(String[] args) {
-        solutionOfProblemFive(2, 9);
-    }
-
-
 }

@@ -4,27 +4,26 @@ public class SumOrProduct {
     // number n and gives them the possibility to choose
     // between computing the sum and computing the product of 1,…,n.
 
-    public static void calculateSumOrProductOfANumberSeries(int number, String calculate) {
+    public static int calculateSumOrProductOfANumberSeries(int number, String calculate) {
         System.out.println("Please Write in String only 'sum' or 'product'. Thank You!!!");
+        System.out.println("Please write positive number");
         if (calculate.equals("sum")) {
             int result = 0;
-            for (int a = 1; a <= number; a++) {
-                result = result + a;
+            if (number >= 0) {
+                for (int a = 1; a <= number; a++) {
+                    result = result + a;
+                }
+                return result;
             }
-            System.out.println(result);
         } else if (calculate.equals("product")) {
             int result = 1;
-            for (int a = 1; a <= number; a++) {
-                result = result * a;
+            if (number >= 0) {
+                for (int a = 1; a <= number; a++) {
+                    result = result * a;
+                }
+                return result;
             }
-            System.out.println(result);
-        } else {
-            System.out.println("Invalid Input. Check the given details");
         }
-    }
-
-    public static void main(String[] args) {
-        calculateSumOrProductOfANumberSeries(9, "product");
-        calculateSumOrProductOfANumberSeries(10, "sum");
+        return 0;
     }
 }

@@ -1,21 +1,27 @@
 public class Power {
 
-    public static void calculatePower(int number, int power) {
-        int result = 1;
-        if (power >= 0) {
+    public static float calculatePower(int number, int power) {
+        float result = 1.0f;
+        if (power > 0) {
             for (int i = 1; i <= power; i++) {
                 result = result * number;
             }
-            System.out.println(result);
+            return result;
+        } else if (power < 0) {
+            power = power * -1;
+            for (int i = 1; i <= power; i++) {
+                result = result * number;
+            }
+            return 1 / result;
         } else {
-            System.out.println("Enter positive power");
+            return result;
         }
-
     }
+}
 
-    public static void main(String[] args) {
-        calculatePower(5, -3);
-        int i = 3;
+
+
+        /*int i = 3;
         int power = 4;
         int result = i;
 
@@ -46,4 +52,5 @@ public class Power {
     // 4 <= 3 false
     // Result= 8
 
-}
+         */
+
