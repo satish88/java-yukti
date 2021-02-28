@@ -21,7 +21,7 @@ public class FactorialTest {
     public static void testForCalculatingNegativeNumberFactorial() {
         Factorial factorial = new Factorial();
         long result = Factorial.calculateFactorial(-4);
-        assertEquals(result, -4, "value of -4!");
+        assertEquals(result, 0, "value of -4!");
     }
 
 }
