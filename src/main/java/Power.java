@@ -17,6 +17,11 @@ public class Power {
             return result;
         }
     }
+
+    public static void main(String[] args) {
+        float calculation = Power.calculatePower(2, -3);
+        System.out.println(calculation);
+    }
 }
 
 
