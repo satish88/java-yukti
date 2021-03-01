@@ -32,5 +32,9 @@ public class MainClass {
         int choice = SumOrProduct.calculateSumOrProductOfANumberSeries(-4, "sum");
         choice = SumOrProduct.calculateSumOrProductOfANumberSeries(5, "product");
         System.out.println(choice);
+
+        MultiplicationTable multiply = new MultiplicationTable();
+        int table = MultiplicationTable.multiplication(10, 5);
+        System.out.println(table);
     }
 }
