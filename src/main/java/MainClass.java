@@ -23,8 +23,8 @@ public class MainClass {
         System.out.println(exponent);
 
         //sum of the number which are divisible from 3 or 5.
-        problem5 numbers = new problem5();
-        int sum = problem5.solutionOfProblemFive(2, 4);
+        SumOfDivisibleNumberThreeOrFive numbers = new SumOfDivisibleNumberThreeOrFive();
+        int sum = SumOfDivisibleNumberThreeOrFive.solutionOfProblemFive(2, 4);
         System.out.println(sum);
 
         //choice between calculating sum or product

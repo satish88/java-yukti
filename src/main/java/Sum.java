@@ -1,5 +1,8 @@
 public class Sum {
 
+    //Write a program that asks the user for a number n
+    // and prints the sum of the numbers 1 to n
+
     public static int sumWithOneInput(int n) {
         int result = 0;
         if (n > 0) {
