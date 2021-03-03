@@ -35,9 +35,4 @@ public class LeapYear {
             return 0;
         }
     }
-
-    public static void main(String[] args) {
-        int result = calculateLeapYear(0);
-        System.out.println(result);
-    }
 }

@@ -33,8 +33,14 @@ public class MainClass {
         choice = SumOrProduct.calculateSumOrProductOfANumberSeries(5, "product");
         System.out.println(choice);
 
+        //multiplication table
         MultiplicationTable multiply = new MultiplicationTable();
         int table = MultiplicationTable.multiplication(10, 5);
         System.out.println(table);
+
+        //next 20 leap year
+        LeapYear counter = new LeapYear();
+        int years = LeapYear.calculateLeapYear(2000);
+        System.out.println(years);
     }
 }
