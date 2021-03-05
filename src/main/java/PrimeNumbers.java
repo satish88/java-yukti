@@ -4,37 +4,41 @@ public class PrimeNumbers {
     //Write a program that prints all prime numbers.
     //work in progress.....uncompleted.
 
-    public static String findPrimeNumber(int number) {
-        String prime = "Number is prime number.";
-        String nonPrime = "Number is not prime";
+    public static boolean findPrimeNumber(int number) {
         if (number <= 1) {
-            System.out.println(number + nonPrime);
-            // return nonPrime;
+            return false;
         } else if (number == 2) {
-            System.out.println(number + prime);
+            return true;
         } else if (number > 2) {
-            int counter = number / 2;
-            for (int a = 2; a <= counter; a++) {
-                if (number % a == 0) {
-                    System.out.println(a + prime);
-                } else {
-                    System.out.println(a + nonPrime);
+            for (int a = 2; a < number; a++) {
+                int n = number % a;
+                if (n == 0) {
+                    return false;
                 }
             }
         }
-        return "Thank You!!!";
+        return true;
     }
 
-    //public static int printPrimeNumber(int number){
-    //  for (int i = 2; i<=number;i++){
-    //    if(findPrimeNumber(i)){
-    //      System.out.println(i);
-    //       }
-    // }
-    //     return 0;
-    // }
+    public static int printPrimeNumber(int number) {
+        int print = 0;
+        if (number < 2) {
+            System.out.println("Smallest prime number is 2. Please enter the value more than 1. Thank You!!!!!!");
+        } else {
+            for (int a = 2; a <= number; a++) {
+                if (findPrimeNumber(a)) {
+                    print = a;
+                    System.out.println(print + " is a prime number.");
+                }
+            }
+        }
+        return print;
+    }
+
     public static void main(String[] args) {
-        String result = findPrimeNumber(20);
+        boolean result = findPrimeNumber(17);
         System.out.println(result);
+        int print = printPrimeNumber(20);
+        System.out.println(print);
     }
 }
