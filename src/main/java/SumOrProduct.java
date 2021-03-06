@@ -5,7 +5,7 @@ public class SumOrProduct {
     // number n and gives them the possibility to choose
     // between computing the sum and computing the product of 1,…,n.
 
-    public static int calculateSumOrProductOfANumberSeries(int number, String calculate) {
+    public static long calculateSumOrProductOfANumberSeries(int number, String calculate) {
         System.out.println("Please Write in String only 'sum' or 'product'. Thank You!!!");
         System.out.println("Please write positive number");
         if (calculate.equals("sum")) {

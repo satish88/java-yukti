@@ -24,12 +24,12 @@ public class MainClass {
 
         //sum of the number which are divisible from 3 or 5.
         SumOfDivisibleNumberThreeOrFive numbers = new SumOfDivisibleNumberThreeOrFive();
-        int sum = SumOfDivisibleNumberThreeOrFive.solutionOfProblemFive(2, 4);
+        long sum = SumOfDivisibleNumberThreeOrFive.solutionOfProblemFive(2, 4);
         System.out.println(sum);
 
         //choice between calculating sum or product
         SumOrProduct option = new SumOrProduct();
-        int choice = SumOrProduct.calculateSumOrProductOfANumberSeries(-4, "sum");
+        long choice = SumOrProduct.calculateSumOrProductOfANumberSeries(-4, "sum");
         choice = SumOrProduct.calculateSumOrProductOfANumberSeries(5, "product");
         System.out.println(choice);
 
