@@ -1,13 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class MultiplicationTable {
 
     //problem 7
     //Write a program that prints a multiplication table for numbers up to 12.
-    public static int multiplication(int number, int n) {
+    public static List<Integer> multiplication(int number, int n) {
         int table;
+        List<Integer> abc = new ArrayList();
         for (int a = 1; a <= n; a++) {
             table = number * a;
-            System.out.println(table);
+            // System.out.println(table);
+            abc.add(table);
         }
-        return 0;
+        return abc;
+
+
     }
+
 }

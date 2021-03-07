@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class MainClass {
 
     public static void main(String[] args) {
@@ -35,8 +37,11 @@ public class MainClass {
 
         //multiplication table
         MultiplicationTable multiply = new MultiplicationTable();
-        int table = MultiplicationTable.multiplication(10, 5);
-        System.out.println(table);
+
+        List<Integer> table = MultiplicationTable.multiplication(10, 5);
+        for (int i = 0; i < table.size(); i++) {
+            System.out.println(table.get(i));
+        }
 
         //next 20 leap year
         LeapYear counter = new LeapYear();
