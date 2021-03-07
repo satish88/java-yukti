@@ -38,7 +38,7 @@ public class MainClass {
         //multiplication table
         MultiplicationTable multiply = new MultiplicationTable();
 
-        List<Integer> table = MultiplicationTable.multiplication(10, 5);
+        List<Integer> table = MultiplicationTable.multiplicationTable(10, 5);
         for (int i = 0; i < table.size(); i++) {
             System.out.println(table.get(i));
         }
