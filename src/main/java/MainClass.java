@@ -43,9 +43,15 @@ public class MainClass {
             System.out.println(table.get(i));
         }
 
-        //next 20 leap year
+        //check leap year
         LeapYear counter = new LeapYear();
-        int years = LeapYear.calculateLeapYear(2000);
-        System.out.println(years);
+        boolean leapYear = LeapYear.checkLeapYear(1904);
+        System.out.println(leapYear);
+
+        //print leap year
+        List<Integer> print = LeapYear.printLeapYear(300, 3);
+        for (int a = 0; a <= print.size(); a++) {
+            System.out.println(print.get(a));
+        }
     }
 }
