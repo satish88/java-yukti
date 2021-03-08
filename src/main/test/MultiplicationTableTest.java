@@ -11,8 +11,8 @@ public class MultiplicationTableTest {
     public void forListResult() {
 
         MultiplicationTable test = new MultiplicationTable();
-        List<Integer> result = MultiplicationTable.multiplicationTable(3, 2);
-        List<Integer> expected = Arrays.asList(0, 3, 6);
+        List<Integer> result = MultiplicationTable.multiplicationTable(3, 0);
+        List<Integer> expected = Arrays.asList(0);
         assertEquals(result, expected);
     }
 }
