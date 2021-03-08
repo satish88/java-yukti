@@ -6,7 +6,7 @@ public class MultiplicationTable {
     //problem 7
     //Write a program that prints a multiplication table for numbers up to 12.
     public static List<Integer> multiplicationTable(int number, int n) {
-        int table = 0;
+        int table;
         List<Integer> multiply = new ArrayList<>();
         if (n != 0) {
             for (int a = 1; a <= n; a++) {
