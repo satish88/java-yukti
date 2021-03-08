@@ -23,16 +23,15 @@ public class PrimeNumbers {
 
     public static List<Integer> printPrimeNumber(int number) {
         List<Integer> primeNumber = new ArrayList<>();
-        for (int a = 2; a <= number; a++) {
-            if (findPrimeNumber(a)) {
-                primeNumber.add(a);
+        if (number >= 2) {
+            for (int a = 2; a <= number; a++) {
+                if (findPrimeNumber(a)) {
+                    primeNumber.add(a);
+                }
             }
+        } else {
+            primeNumber.add(null);
         }
         return primeNumber;
-    }
-
-    public static void main(String[] args) {
-
-
     }
 }
