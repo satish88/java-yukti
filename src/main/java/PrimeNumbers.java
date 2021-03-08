@@ -5,8 +5,6 @@ public class PrimeNumbers {
 
     //problem 8
     //Write a program that prints all prime numbers.
-    //work in progress.....uncompleted.
-
     public static boolean findPrimeNumber(int number) {
         if (number <= 1) {
             return false;
