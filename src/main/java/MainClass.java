@@ -33,7 +33,6 @@ public class MainClass {
         SumOrProduct option = new SumOrProduct();
         long choice = SumOrProduct.calculateSumOrProductOfANumberSeries(-4, "sum");
         choice = SumOrProduct.calculateSumOrProductOfANumberSeries(5, "product");
-        System.out.println(choice);
 
         //multiplication table
         MultiplicationTable multiply = new MultiplicationTable();
